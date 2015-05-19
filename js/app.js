@@ -25,6 +25,10 @@ $(document).ready(function(){
 		$('.web-content').show();
 	});
 
+	// $('#vibe').mouseover(function(){
+	// 	$('#vibe-text').fadeIn('fast');
+	// });
+
 
 
 });
