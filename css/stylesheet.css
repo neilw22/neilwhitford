@@ -1,0 +1,85 @@
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.masthead {
+	background-color: darkgray;
+	width: 100%;
+	height: 8em;
+	border: 1px solid black;
+	z-index: 99999;
+}
+
+.content {
+	width: 100%;
+	height: 45em;
+	border: 1px solid black;
+}
+
+.web-content,
+.play-content,
+.produce-content,
+.teach-content {
+	display: none;
+	background-color: aqua;
+	height: 100%;
+}
+
+.nav-buttons {
+	position: relative;
+	display: inline;
+	float: left;
+	margin: 3em 3em;
+}
+
+.nav-buttons li {
+	display: inline-block;
+	float: left;
+	margin-right: 5em;
+	border: solid 1px black;
+
+}
+
+.nav {
+	display: inline;
+	float: left;
+	position: relative;
+	margin-top: 3em;
+	margin-left: 2em;
+}
+
+.nav li {
+	display: inline-block;
+	float: left;
+	margin-right: 5em;
+	border: solid 1px black;
+
+}
+
+.social-icons {
+	display: inline;
+	float: right;
+	position: relative;
+	margin-top: 3em;
+	margin-right: 2em;
+}
+
+.social-icons li {
+	display: inline-block;
+	float: left;
+	margin-right: 10px;
+}
+
+.about:hover,
+.play:hover,
+.produce:hover,
+.teach:hover,
+.web:hover {
+	cursor: pointer;
+	color: yellow;
+}
