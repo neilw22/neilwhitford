@@ -1,32 +1,43 @@
 $(document).ready(function(){
 
 	$('.about').click(function(){
-		$('.play-content, .produce-content, .teach-content, .web-content').hide();
-		$('.about-content').show();
+		$('.content-box').animate( { right : "100%" }, 500, function() {
+			$('.content-box').hide();
+			$('.content-box').css( "right" , "initial");
+			$('#about-content').fadeIn(500);
+		});		
 	});
 
 	$('.play').click(function(){
-		$('.about-content, .produce-content, .teach-content, .web-content').hide();	
-		$('.play-content').show();
+		$('.content-box').animate( { right : "100%" }, 500, function() {
+			$('.content-box').hide();
+			$('.content-box').css( "right" , "initial");
+			$('#play-content').fadeIn(500);
+		});		
 	});
 
 	$('.produce').click(function(){
-		$('.play-content, .about-content, .teach-content, .web-content').hide();	
-		$('.produce-content').show();
+		$('.content-box').animate( { right : "100%" }, 500, function() {
+			$('.content-box').hide();
+			$('.content-box').css( "right" , "initial");
+			$('#produce-content').fadeIn(500);
+		});		
 	});
 
 	$('.teach').click(function(){
-		$('.play-content, .produce-content, .about-content, .web-content').hide();
-		$('.teach-content').show();
+		$('.content-box').animate( { right : "100%" }, 500, function() {
+			$('.content-box').hide();
+			$('.content-box').css( "right" , "initial");
+			$('#teach-content').fadeIn(500);
+		});		
 	});
 
 	$('.web').click(function(){
-		$('.about-content').animate( { right : "100%" }, 500, function() {
-			$('.play-content, .produce-content, .teach-content, .about-content').hide();
-			$('.about-content').css( "right" , "initial");
-			$('.web-content').fadeIn(1000);
-		});
-		
+		$('.content-box').animate( { right : "100%" }, 500, function() {
+			$('.content-box').hide();
+			$('.content-box').css( "right" , "initial");
+			$('#web-content').fadeIn(500);
+		});		
 	});
 
 });

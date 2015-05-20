@@ -2,17 +2,23 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
+  background-image: url("../images/zwartevilt.png");
+  background-size: cover;
+  background-repeat: none;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
+	/*Masthead and Navigation Bar*/
+
 .masthead {
-	background-color: darkgray;
+	/*background-color: darkgray;*/
 	width: 100%;
 	height: 8em;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	z-index: 99999;
+	background-image: url("../images/grey_wash_wall.png");
 }
 
 .nav {
@@ -22,6 +28,7 @@ html {
 	/*position: relative;*/
 	margin-top: 3em;
 	margin-left: 2em;
+	font-family: 'Fredericka the Great', cursive;
 }
 
 .nav li {
@@ -53,25 +60,37 @@ html {
 	color: yellow;
 }
 
+.about:hover,
+.play:hover,
+.produce:hover,
+.teach:hover,
+.web:hover {
+	cursor: pointer;
+	color: yellow;
+}
+
+	/*MAIN CONTENT*/
+
 .content {
 	width: 100%;
 	height: 50em;
-	border: 1px solid black;
+	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
 	/*overflow: hidden;*/
 }
 
-.about-content,
-.web-content {
+#about-content,
+#web-content {
 	width: 80%;
 	margin: auto;
 	padding-top: 1em;
 	position: relative;
 }
 
-.web-content,
-.play-content,
-.produce-content,
-.teach-content {
+#web-content,
+#play-content,
+#produce-content,
+#teach-content {
 	display: none;
 	height: 100%;
 	position: relative;
@@ -88,6 +107,8 @@ html {
 #neil-front {
 	width: 100%;
 	height: auto;
+	max-height: 699px;
+	max-width: 466px;
 }
 
 .nav-buttons {
@@ -106,9 +127,10 @@ html {
 }
 
 .nav-buttons li:hover{
-	color: black;
-	background-color: aqua;
-}
+	color: yellow;
+	}
+
+	/*WEB PANEL*/
 
 .web-content p {
 	padding: 1em;
@@ -129,7 +151,7 @@ html {
 	min-width: 200px;
 	height: auto;
 	border-radius:  5px;
-	opacity: 0.9;
+	opacity: 0.6;
 	transition: opacity 0.5s;
 }
 
@@ -142,11 +164,4 @@ html {
 	margin: 1em auto;
 }
 
-.about:hover,
-.play:hover,
-.produce:hover,
-.teach:hover,
-.web:hover {
-	cursor: pointer;
-	color: green;
-}
+
