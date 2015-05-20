@@ -21,14 +21,12 @@ $(document).ready(function(){
 	});
 
 	$('.web').click(function(){
-		$('.play-content, .produce-content, .teach-content, .about-content').hide();
-		$('.web-content').show();
+		$('.about-content').animate( { right : "100%" }, 500, function() {
+			$('.play-content, .produce-content, .teach-content, .about-content').hide();
+			$('.about-content').css( "right" , "initial");
+			$('.web-content').fadeIn(1000);
+		});
+		
 	});
-
-	// $('#vibe').mouseover(function(){
-	// 	$('#vibe-text').fadeIn('fast');
-	// });
-
-
 
 });
