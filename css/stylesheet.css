@@ -2,7 +2,7 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
-  background-image: url("../images/zwartevilt.png");
+  background-image: url("../images/background_image.png");
   background-size: cover;
   background-repeat: none;
 }
@@ -73,7 +73,7 @@ html {
 
 .content {
 	width: 100%;
-	height: 50em;
+	/*height: auto;*/
 	color: white;
 	font-family: 'Source Sans Pro', sans-serif;
 	/*overflow: hidden;*/
@@ -102,14 +102,29 @@ html {
 
 #main-image {
 	width: 50%;
-	margin: auto;
+	margin-top: 1em;
+	float: left;
+
+			}
+
+#main-text {
+	font-size: 1.2em;
+	margin: 5em auto;
+	padding-left: 2em;
+	width: 50%;
+	float: left;
 }
+
 #neil-front {
 	width: 100%;
 	height: auto;
 	max-height: 699px;
 	max-width: 466px;
-}
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 30px 1px rgba(0,0,0,1);
+-moz-box-shadow: 0px 0px 30px 1px rgba(0,0,0,1);
+box-shadow: 0px 0px 30px 1px rgba(0,0,0,1);
+	}
 
 .nav-buttons {
 	width: 100%;
@@ -128,6 +143,13 @@ html {
 
 .nav-buttons li:hover{
 	color: yellow;
+	}
+
+.player-box {
+	width: 50%;
+	height: auto;
+	margin: 2em auto;
+/*	position: relative;*/
 	}
 
 	/*WEB PANEL*/

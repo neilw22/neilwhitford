@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	$('.about').click(function(){
-		$('.content-box').animate( { right : "100%" }, 500, function() {
+		$('.content-box').animate( { right : "100%" }, 300, function() {
 			$('.content-box').hide();
 			$('.content-box').css( "right" , "initial");
 			$('#about-content').fadeIn(500);
@@ -9,7 +9,7 @@ $(document).ready(function(){
 	});
 
 	$('.play').click(function(){
-		$('.content-box').animate( { right : "100%" }, 500, function() {
+		$('.content-box').animate( { right : "100%" }, 300, function() {
 			$('.content-box').hide();
 			$('.content-box').css( "right" , "initial");
 			$('#play-content').fadeIn(500);
@@ -17,7 +17,7 @@ $(document).ready(function(){
 	});
 
 	$('.produce').click(function(){
-		$('.content-box').animate( { right : "100%" }, 500, function() {
+		$('.content-box').animate( { right : "100%" }, 300, function() {
 			$('.content-box').hide();
 			$('.content-box').css( "right" , "initial");
 			$('#produce-content').fadeIn(500);
@@ -25,7 +25,7 @@ $(document).ready(function(){
 	});
 
 	$('.teach').click(function(){
-		$('.content-box').animate( { right : "100%" }, 500, function() {
+		$('.content-box').animate( { right : "100%" }, 300, function() {
 			$('.content-box').hide();
 			$('.content-box').css( "right" , "initial");
 			$('#teach-content').fadeIn(500);
@@ -33,7 +33,7 @@ $(document).ready(function(){
 	});
 
 	$('.web').click(function(){
-		$('.content-box').animate( { right : "100%" }, 500, function() {
+		$('.content-box').animate( { right : "100%" }, 300, function() {
 			$('.content-box').hide();
 			$('.content-box').css( "right" , "initial");
 			$('#web-content').fadeIn(500);
